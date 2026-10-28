@@ -5321,7 +5321,7 @@ impl<'data> SymbolCopyInfo<'data> {
         }
 
         if !symbol_state.contains(ValueFlags::GROUP_SIGNATURE)
-            && symbol_db.args.should_strip_symbol_named(name)
+            && symbol_db.should_strip_symbol_named(name)
         {
             return None;
         }
